@@ -1,0 +1,1 @@
+cltz = int(input())
