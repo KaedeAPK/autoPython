@@ -8,3 +8,6 @@ print(spam)
 
 spam[-1] = 123
 print(spam)
+
+spam += ['a','b','c']
+print(spam)
