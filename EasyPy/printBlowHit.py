@@ -1,6 +1,7 @@
 
 b = [1,2,3,0,] 
 a = [0,1,2,3,]
+    # b[0]= a[1], b[1]= a[2],b[3]= a[0] are True.
 
 # hit:  0
 # blow: 1
@@ -11,10 +12,10 @@ for f in range(4): # as b?
             print('f: ', str(f),'-----------------------')
             print(' ','i: ', str(i),'-------------------\n')
 
-            print( 'b[', f, ']',b[f] ,'!=', 'a[', f, ']', a[f],'and',)
-            print( 'b[', f, ']',b[f] ,'==', 'a[', i, ']', a[i],'and',)
-            print( 'b[', i, ']',b[i] ,'!=', 'a[', i, ']', a[i])
-            print(
+            print( 'b[', f, ']',b[f] ,'!=', 'a[', f, ']', a[f],'and: ',(b[f] != a[f]))
+            print( 'b[', i, ']',b[i] ,'!=', 'a[', i, ']', a[i],'and: ',(b[i] != a[i]))
+            print( 'b[', f, ']',b[f] ,'==', 'a[', i, ']', a[i],': ',(b[f] == a[i]))
+            print('  ',
                 (b[f] != a[f])and\
                 (b[f] == a[i])and\
                 (b[i] != a[i]),
