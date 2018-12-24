@@ -6,6 +6,7 @@ a = [
     random.randint(0,9),
     random.randint(0,9),
     ]
+print(a)
 while True:
 # make input 4 digits
     # Flagをパタン！　　　　　　　　　　
@@ -36,11 +37,14 @@ while True:
     blow = 0
     for i in range(4):
         for f in range(4):
-            if (a[i] == int(b[f])) and (a[i] != int(b[i])) and (a[i] != int(b[f])):
+            if (a[i] == int(b[f])) \
+            and (a[i] != int(b[i])) \
+            and (a[f] != int(b[f])):
                 blow += 1
                 break
     print('Hit: '+ str(hit))
     print('Blow: '+ str(blow))
+    print(a)
 
 # Write Down Flow Chart
 
