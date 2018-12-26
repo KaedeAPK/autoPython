@@ -5,5 +5,11 @@ cheese = copy.copy(spam)
 cheese[1] = 42
 print(spam, '\n', cheese)
 
-ani = ('Owl', 'Arigater', 'dog', 'cat')
+intb = [1,2,3,4,5,]
+things = [spam,intb]
+
+print(things)
+
+cThings = copy.copy(things)
+print(cThings)
 
