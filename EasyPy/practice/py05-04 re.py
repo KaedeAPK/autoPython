@@ -1,5 +1,7 @@
 import re
 
+# Regular Expression
+
 isok = False
 while isok == False:
     b = input('数を入れてね: ')
