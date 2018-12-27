@@ -48,9 +48,10 @@ class Ball:
 # root.after()でのmove()内の呼び出しで実行されるわけか？
 
 class Rect(Ball):
-    def erase(self, canvas):
-        canvas.delete(self.tag)
+    #def erase(self, canvas):
+        #canvas.delete(self.tag)
     def draw(self,canvas):
+        print(id(self))
         r = 20
         canvas.create_rectangle(
             self.x - r,  self.y - r,
@@ -58,16 +59,17 @@ class Rect(Ball):
             fill = self.color, width = 0,
             tag = self.tag,
         )
-# トライさんは動かない。おしえて－－－－
+
 # http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/
 # create_polygon.html
 
 # id = C.create_polygon(x0, y0, x1, y1, ..., option, ...)
 class Tri(Ball):
-    def erase(self, canvas):
-        canvas.delete(self.tag)
+    #def erase(self, canvas):
+        #canvas.delete(self.tag)
     def draw(self,canvas):
         r = 20
+        print(id(self))
         canvas.create_polygon(
             self.x, self.y - r,
             self.x + r,  self.y + r,
