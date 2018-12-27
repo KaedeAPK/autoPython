@@ -13,11 +13,6 @@ def move():
     for b in balls:
         # 前の位置情報の円を(tagで)消して,
         canvas.delete(b['tag'])
-        canvas.create_oval(
-            b['x'] - r,  b['y'] - r,
-            b['x'] + r,  b['y'] + r,
-            fill = 'white', width = 0,
-        )
         #座標を更新して,
         b['x'] += b['dx']
         b['y'] += b['dy']
