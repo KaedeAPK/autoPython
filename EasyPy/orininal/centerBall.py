@@ -3,9 +3,11 @@ import tkinter as tk
 
 r = 20
 balls = [
-    {'x':400, 'y':300, 'dx': 1, 'dy': 1, 'color':'red', 'tag': 'redTag',},
-    {'x':200, 'y':100, 'dx': -1, 'dy': 1, 'color': 'green','tag': 'greenTag',},
-    {'x':100, 'y':200, 'dx': 1, 'dy': -1, 'color': 'blue','tag': 'blueTag',},
+    {'x':300, 'y':200, 'dx': 1, 'dy': 1, 'color':'red', 'tag': 'redTag',},
+    {'x':300, 'y':250, 'dx': -1, 'dy': 1, 'color': 'green','tag': 'greenTag',},
+    {'x':300, 'y':300, 'dx': 1, 'dy': -1, 'color': 'blue','tag': 'blueTag',},
+    {'x':300, 'y':350, 'dx': -1, 'dy': -1, 'color': 'purple','tag': 'purpleTag',},
+    {'x':300, 'y':400, 'dx': 1, 'dy': -1, 'color': 'yellow','tag': 'yellowTag',},
 ]
 # tagですべて消してるはずなのにどんどん重くなって固まってしまう。どこに欠点が？
 def move():
@@ -13,7 +15,7 @@ def move():
     for b in balls:
         # 前の位置情報の円を(tagで)消して,
         canvas.delete(b['tag'])
-        #座標を更新して,
+        #座標を更新して,c
         b['x'] += b['dx']
         b['y'] += b['dy']
 
